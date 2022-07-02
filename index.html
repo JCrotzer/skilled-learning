@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -12,15 +11,15 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
+    <div class="container">
       <!-- Navbar -->
-      <header role="header" class="header-nav">
+      <header class="header-nav">
           <img class="logo" src="./assets/logo-dark.svg" alt="skilled logo">
           <button class="header-btn">Get Started</button>
       </header>
 
       <!-- Hero section -->
-    <main role="main" class="main-section">
+    <main>
       <section class="hero">
         <div class="hero-section">
             <h1 class="hero-title">Maximize skill, <br>
@@ -37,9 +36,10 @@
           <img class="tablet" src="./assets/image-hero-tablet.png" alt="" />
         </div>
       </section>
+    </main>
 
     <!-- Article section -->
-    <section role="article" class="article-section">
+    <section class="article-section">
       <div class="article-wrap">
         <div class="card1">
           <h2>Check out our most popular courses!</h2>
@@ -60,7 +60,7 @@
             Create beautiful, usable interfaces to help shape the future of how
             the web looks. Even with no experience!
           </p>
-            <a href="#" aria-hidden="true">Get Started</a>
+            <a href="">Get Started</a>
         </div>
         <div class="card2">
           <img src="./assets/icon-photography.svg" alt="photography" />
@@ -69,7 +69,7 @@
             Explore critical fundamentals like lighting, composition, and focus
             to capture exceptional photos.
           </p>
-            <a href="#" aria-hidden="true">Get Started</a>
+            <a href="#">Get Started</a>
         </div>
         <div class="card2">
           <img src="./assets/icon-crypto.svg" alt="crypto" />
@@ -78,7 +78,7 @@
             All you need to know to get started investing in crypto. Go from
             beginner to advanced with this 54 hour course.
           </p>
-            <a href="#" aria-hidden="true">Get Started</a>
+            <a href="#">Get Started</a>
         </div>
         <div class="card2">
           <img src="./assets/icon-business.svg" alt="business" />
@@ -87,15 +87,17 @@
             A step-by-step playbook to help you start, scale, and sustain your
             business without outside investment.
           </p>
-            <a href="#" aria-hidden="true">Get Started</a>
+            <a href="#">Get Started</a>
         </div>
       </div>
     </section>
-    </main>
     <!-- Footer section -->
-    <footer role="footer" class="main-footer">
+    <div class="footer">
+      <footer class="main-footer">
         <h3 class="logo2">skilled</h3>
-        <a href="#" class="footer-btn" aria-hidden="true">Get Started</a>
-    </footer>
+        <a href="#" class="footer-btn">Get Started</a>
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
