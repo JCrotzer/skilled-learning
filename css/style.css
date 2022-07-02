@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+.tablet, .desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 15px;
+}
+
+.header-btn {
+    background-color:#13183F;
+    color: white;
+    border-radius: 24px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 1.0rem;
+}
+
+.logo {
+    text-decoration: none;
+    color: rgb(2, 2, 53);
+}
+
+.btn-hero {
+    margin: 20px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    font-weight: 700;
+    font-size: 1.0rem;
+    padding: 2px;
+}
+
+.hero-section {
+    margin: 85px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+
+.hero p {
+    margin-left: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    max-width: 400px;
+    line-height: 28px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-section {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-top: 30px;
+}
+
+.article-wrap {
+    max-width: 1100px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.card1 {
+    margin-top: 30px;
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: white;
+    padding: 75px 30px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card2 {
+    margin-top: 30px;
+    width: 300px;
+    height: 250px;
+    background: white;
+    color: #13183F;
+    padding: 50px 30px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    -webkit-box-shadow: 7px 11px 20px -10px rgba(0, 0, 0, 0.33);
+    box-shadow: 7px 11px 20px -10px rgba(0, 0, 0, 0.33);
+}
+
+.card2 img {
+    margin-top: -45px;
+    width: 40px;
+    height: 40px;
+}
+
+.card2 p {
+    font-size: 1.0 rem;
+    line-height: 23px;
+}
+
+.card2 h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.card2 a {
+    text-decoration: none;
+    color:#F02AA6;
+    font-weight:700;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 15px;
+    background-color:#13183F;
+    height: 75px;
+    padding: 20px;
+}
+
+.logo2 {
+    font-size: 34px;
+    font-weight: 900;
+    color: white;
+}
+
+.footer-btn {
+    background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    color: white;
+    padding: 6px;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (min-width : 820px) {
+    .container {
+        margin: 0 30px;
+    }
+    
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+    }
+
+    .desktop, .mobile {
+        display: none;
+    }
+
+    .tablet  {
+        display: block;
+    }
+
+    .header-btn {
+        margin-right: 10px;
+    }
+
+    .article-wrap {
+        margin: 0 30px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-hero {
+        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        color: white;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.0rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .card2 p {
+        font-size: 1rem;
+        line-height: 28px;
+    }
+
+    .card2 a {
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .card2 h3 {
+        font-size: 1.0rem;
+        font-weight: 800;
+    }
+
+    .card1 {
+        font-size: 1rem;
+    }
+
+    .footer-btn {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    
+    .container {
+        margin: 0 30px;
+    }
+
+    main {
+        background:none;
+    }
+
+    .tablet, .mobile {
+        display: none;
+    }
+    
+    .desktop {
+        display: block;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img {
+        height: 100%;
+        max-width: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .hero-section {
+        margin: 0px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+        line-height: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 25px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .article-wrap {
+        margin: 0 30px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .card1 {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        color: white;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
